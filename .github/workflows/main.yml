@@ -1,4 +1,4 @@
-  name: Python CI
+name: Python CI
 
 on:
   push:
@@ -10,18 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
 
-    - name: Install Dependencies
-      run: |
-        make install
+      - name: Install Dependencies
+        run: |
+          make install
 
-    - name: Run Tests
-      run: |
-        make test
+      - name: Run Tests
+        run: |
+          make test
