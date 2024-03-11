@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    git branch: 'main', url: 'https://github.com/Ahmed1282/mlop_class_task_2_i201884.git'
+                    git branch: 'main', url: 'https://github.com/suleimanafzal/mlops2.git'
                 }
             }
         }
